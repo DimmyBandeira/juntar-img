@@ -1,12 +1,12 @@
 # ImgAlign
 
-A webapplication to join, stitch or align overlapping images. It can be used to create panoramas or to align images, for example forms which have not been scanned properly.
+Um aplicativo da web para unir, unir ou alinhar imagens sobrepostas. Pode ser usado para criar panoramas ou para alinhar imagens, por exemplo, formulários que não foram digitalizados corretamente.
 
-Features: Surface projection, feature detection, feature matching, bundle adjustement, wave correction, color transfer, seam detection and multiband blending.
+Recursos: Projeção de superfície, detecção de recursos, correspondência de recursos, ajuste de pacote, correção de onda, transferência de cor, detecção de costura e combinação multibanda.
 
-The core algorithms are taken from OpenCV (modules Feature2D and Stitching mainly) and have been adjusted where needed. A customized version of OpenCV has then been compiled to wasm. To ensure a non blocking UI, all OpenCV related functions run via a webworker.
+Os algoritmos principais são retirados do OpenCV (módulos Feature2D e Stitching principalmente) e foram ajustados onde necessário. Uma versão personalizada do OpenCV foi então compilada para wasm. Para garantir uma interface do usuário sem bloqueio, todas as funções relacionadas ao OpenCV são executadas por meio de um webworker.
 
-Pros and cons: As image stitching can be quite memory and cpu intensive, there are some limitations on the amount or size of images which can be stitched together, especially on mobile devices. On the plus side, basic stitching functionality is available on almost any device which can run a browser. There is no need to download a professional stitching software. The application is fully functional offline as well.
+Prós e contras: como a união de imagens pode consumir muita memória e CPU, existem algumas limitações na quantidade ou tamanho das imagens que podem ser unidas, especialmente em dispositivos móveis. No lado positivo, a funcionalidade básica de costura está disponível em quase todos os dispositivos que podem executar um navegador. Não há necessidade de baixar um software de costura profissional. O aplicativo também é totalmente funcional offline.
 
 ## Built With
 
